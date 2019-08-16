@@ -23,7 +23,7 @@ virtualenv calculator
 calculator\Scripts\activate
 #create prompt > (calculator) \path\to\curr\dir
 
-#create dir for git repo CalculatorLibrary & cd 
+#create dir for git repo CalculatorLibrary & cd
 #create calculator.py
 git add, commit, push
 
@@ -34,6 +34,16 @@ pip freeze
 pip freeze > requirements.txt
 
 #if this is run in dir where calculator is a subdir then slow.
+#nbb: this will analyise all .py files in curr dir and subdirs
 flake8 --statistics
+
+#checks compliance with PEP 8
+https://www.python.org/dev/peps/pep-0008/
+
+https://docs.pytest.org/en/latest/
+pytest will run all files of the form test_*.py or *_test.py in the current directory and its subdirectories.
+https://docs.pytest.org/en/latest/goodpractices.html#test-discovery
+
+
 
 https://circleci.com/
